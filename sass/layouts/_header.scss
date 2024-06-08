@@ -1,0 +1,68 @@
+@use "../abstracts";
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 32px 0;
+
+    &__more {
+        display: none;
+    }
+
+    @include abstracts.screen(sm) {
+        flex-direction: row-reverse;
+    }
+}
+
+.nav-bar {
+    @include abstracts.screen(md) {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+    }
+    &__item {
+        &:last-child {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__item + &__item {
+        margin-left: 48px;
+    }
+
+    @include abstracts.screen(lg) {
+        &__item + &__item {
+            margin-left: 15px;
+        }
+    }
+
+    &__link {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 175%;
+    }
+
+    &__arrow-img {
+        display: block;
+        margin-left: 6px;
+    }
+}
+
+.act {
+    display: flex;
+    align-items: center;
+
+    &__btn {
+        margin-left: 30px;
+        font-size: 1.6rem;
+        padding: 8px 24px;
+
+        @include abstracts.screen(lg) {
+            margin-left: 12px;
+        }
+    }
+}

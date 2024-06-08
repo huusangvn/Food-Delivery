@@ -1,0 +1,31 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #572af8;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto Serif", sans-serif;
+    color: #191720;
+    background: #fffae3;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background: transparent;
+    outline: none;
+    border: none;
+}
