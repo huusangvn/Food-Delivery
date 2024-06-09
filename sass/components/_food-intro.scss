@@ -1,0 +1,138 @@
+@use "../abstracts";
+.food-intro {
+    @include abstracts.screen(lg) {
+        margin-top: 30px;
+    }
+    @include abstracts.screen(md) {
+        margin-top: 50px;
+    }
+    &__image {
+        width: 100%;
+        height: 594px;
+        position: relative;
+        &--bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 478px;
+            border-radius: 12px;
+            background: #29b067;
+
+            @include abstracts.screen(lg) {
+                width: 80%;
+                right: 50%;
+                translate: 50%;
+            }
+
+            @include abstracts.screen(md) {
+                width: 88.2%;
+                height: 248px;
+            }
+
+            @include abstracts.screen(sm) {
+                width: 73%;
+                height: 248px;
+            }
+        }
+        &--sub-bg {
+            position: absolute;
+            left: 50%;
+            top: 38px;
+            translate: -50%;
+
+            width: 87.67%;
+            height: 556px;
+            border-radius: 12px;
+            background: linear-gradient(181deg, #ffcf54 34.42%, #ffb700 98.57%);
+
+            @include abstracts.screen(lg) {
+                width: 70%;
+                right: 50%;
+                translate: -50%;
+            }
+
+            @include abstracts.screen(md) {
+                top: 20px;
+                width: 76.5%;
+                height: 284px;
+            }
+
+            @include abstracts.screen(sm) {
+                width: 235.822px;
+            }
+        }
+
+        &--sub-banner {
+            position: absolute;
+            top: 68px;
+            right: 58px;
+
+            @include abstracts.screen(lg) {
+                top: 68px;
+                right: 120px;
+            }
+
+            @include abstracts.screen(md) {
+                top: 34px;
+                right: 73px;
+            }
+
+            @include abstracts.screen(sm) {
+                right: 80px;
+            }
+        }
+
+        &--banner {
+            z-index: 1;
+            position: absolute;
+            top: 38px;
+            left: 50%;
+            translate: -50%;
+
+            @include abstracts.screen(md) {
+                top: 20px;
+            }
+        }
+    }
+    @include abstracts.screen(md) {
+        &__image--sub-banner-img {
+            width: 183.731px;
+            height: 208.808px;
+        }
+
+        &__image--banner-img {
+            width: 217.017px;
+            height: 85px;
+        }
+    }
+
+    &__delivery {
+        z-index: 99;
+        position: absolute;
+        top: 108px;
+        left: 47%;
+        translate: -50% 0;
+
+        @include abstracts.screen(md) {
+            top: 55px;
+            left: 47%;
+        }
+        &-man {
+            height: 486px;
+            object-fit: contain;
+
+            @include abstracts.screen(xl) {
+                width: 562px;
+            }
+            @include abstracts.screen(lg) {
+                width: 662px;
+            }
+
+            @include abstracts.screen(md) {
+                width: 338px;
+                height: 248px;
+            }
+        }
+    }
+}
