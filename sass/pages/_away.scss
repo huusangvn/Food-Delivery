@@ -2,7 +2,10 @@
 .away {
     margin-top: 100px;
 
-    padding: 160px 0;
+    padding: 160px 0 161px 0;
+    @include abstracts.screen(md) {
+        padding-top: 60px;
+    }
     background: #fff;
 
     &__top {

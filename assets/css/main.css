@@ -1669,8 +1669,13 @@ input {
 
 .away {
   margin-top: 100px;
-  padding: 160px 0;
+  padding: 160px 0 161px 0;
   background: #fff;
+}
+@media (max-width: 767.98px) {
+  .away {
+    padding-top: 60px;
+  }
 }
 .away__top {
   display: flex;
@@ -1722,6 +1727,264 @@ input {
 }
 .away__title {
   margin-top: 20px;
+}
+
+.about-food {
+  position: relative;
+  padding: 201px 0 100px;
+}
+@media (max-width: 767.98px) {
+  .about-food {
+    padding: 50px 0 160px;
+  }
+}
+.about-food__row {
+  align-items: center;
+}
+@media (max-width: 767.98px) {
+  .about-food__row {
+    flex-direction: column-reverse;
+  }
+}
+.about-food__image-bg {
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  .about-food__image-bg {
+    height: 284.869px;
+  }
+}
+.about-food__image-sub-bg {
+  width: 85%;
+}
+@media (max-width: 767.98px) {
+  .about-food__image-sub-bg {
+    height: 331.354px;
+  }
+}
+.about-food__img {
+  width: 415px;
+}
+@media (max-width: 1199.98px) {
+  .about-food__img {
+    width: 355px;
+  }
+}
+@media (max-width: 991.98px) {
+  .about-food__img {
+    width: 300px;
+  }
+}
+@media (max-width: 575.98px) {
+  .about-food__img {
+    width: 247.323px;
+    height: 193.687px;
+  }
+}
+.about-food__delivery {
+  position: absolute;
+  top: 135px;
+  left: 51px;
+}
+@media (max-width: 991.98px) {
+  .about-food__delivery {
+    top: 150px;
+    left: 23px;
+  }
+}
+@media (max-width: 767.98px) {
+  .about-food__delivery {
+    top: 85px;
+    left: 50px;
+  }
+}
+.about-food__detail {
+  position: absolute;
+}
+.about-food__detail-1 {
+  top: 52px;
+  left: 84px;
+}
+.about-food__detail-2 {
+  bottom: 9px;
+  right: 51px;
+}
+@media (max-width: 991.98px) {
+  .about-food__detail-2 {
+    right: 71px;
+  }
+}
+.about-food__detail-3 {
+  bottom: 30px;
+  left: 74px;
+}
+.about-food__detail-4 {
+  top: 42px;
+  right: 56px;
+}
+.about-food__detail-img-1, .about-food__detail-img-2 {
+  width: 168.408px;
+}
+@media (max-width: 991.98px) {
+  .about-food__detail-img-2 {
+    width: 138.408px;
+  }
+}
+@media (max-width: 767.98px) {
+  .about-food__detail-1 {
+    top: 31px;
+    left: 50px;
+  }
+  .about-food__detail-2 {
+    bottom: -85px;
+    right: 35px;
+  }
+  .about-food__detail-3 {
+    bottom: -90px;
+    left: 44px;
+  }
+  .about-food__detail-4 {
+    top: 25px;
+    right: 53px;
+  }
+  .about-food__detail-img-1, .about-food__detail-img-2 {
+    width: 100.364px;
+  }
+  .about-food__detail-img-3 {
+    width: 66.747px !important;
+  }
+  .about-food__detail-img-4 {
+    width: 88.747px !important;
+  }
+}
+.about-food__detail-img-3 {
+  width: 94px;
+}
+.about-food__detail-img-4 {
+  width: 112px;
+}
+@media (max-width: 767.98px) {
+  .about-food__heading {
+    font-size: 3.4rem;
+  }
+}
+.about-food__desc {
+  margin: 18px 0 30px;
+  font-size: 1.9rem;
+  max-width: 470px;
+}
+@media (max-width: 767.98px) {
+  .about-food__desc {
+    font-size: 1.6rem;
+  }
+}
+.about-food__btn {
+  margin-top: 38px;
+  width: 166px;
+  white-space: nowrap;
+}
+@media (max-width: 767.98px) {
+  .about-food__btn {
+    margin-top: 30px;
+  }
+}
+
+.quality {
+  margin: -100px 0 0;
+  height: 202px;
+  background: #fff;
+}
+.quality__inner {
+  position: relative;
+  top: 100px;
+  background: #191720;
+  border-radius: 12px;
+}
+@media (max-width: 767.98px) {
+  .quality__inner {
+    top: initial;
+  }
+}
+@media (max-width: 991.98px) {
+  .quality {
+    height: 180px;
+  }
+}
+@media (max-width: 767.98px) {
+  .quality {
+    height: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .quality {
+    padding-bottom: 70px;
+  }
+}
+.quality__numbers {
+  padding: 55px 0;
+  display: flex;
+  gap: 100px;
+}
+@media (max-width: 1199.98px) {
+  .quality__numbers {
+    gap: 70px;
+  }
+}
+@media (max-width: 991.98px) {
+  .quality__numbers {
+    gap: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .quality__numbers {
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+.quality__number-title {
+  font-size: 4.4rem;
+  font-weight: 600;
+  line-height: 100%;
+  color: #fff;
+}
+@media (max-width: 991.98px) {
+  .quality__number-title {
+    font-size: 3.5rem;
+  }
+}
+.quality__number-desc {
+  margin-top: 18px;
+  color: #fff;
+  white-space: nowrap;
+}
+@media (max-width: 991.98px) {
+  .quality__number-desc {
+    margin-top: 14px;
+  }
+}
+.quality__detail-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.quality__detail-2 {
+  position: absolute;
+  top: 68px;
+  right: 0;
+}
+@media (max-width: 575.98px) {
+  .quality__detail-2 {
+    top: initial;
+    bottom: 30px;
+  }
+}
+.quality__detail-img-1 {
+  width: 59px;
+}
+.quality__detail-img-2 {
+  width: 71px;
+  height: 67px;
 }
 
 /*# sourceMappingURL=main.css.map */
