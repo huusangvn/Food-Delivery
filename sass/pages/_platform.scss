@@ -1,7 +1,7 @@
 @use "../abstracts";
 .platform {
     &__inner {
-        padding: 160px 0;
+        padding: 160px 0 80px;
         background: #fff;
 
         @include abstracts.screen(lg){
@@ -9,8 +9,10 @@
         }
 
         @include abstracts.screen(md){
-            padding: 70px 0;
+            padding: 70px 0 0;
         }
+
+      
     }
 
     &__top {

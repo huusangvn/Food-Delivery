@@ -1,0 +1,150 @@
+@use "../abstracts";
+
+.employee {
+    padding: 80px 0;
+    background: #fff;
+
+    @include abstracts.screen(md){
+        padding: 70px 0;
+    }
+
+    .row {
+        align-items: center;;
+    }
+
+    &__desc {
+        margin: 18px 0;
+
+        @include abstracts.screen(sm){
+            margin: 12px 0 16px;
+        }
+    }
+
+    &__list-item {
+        list-style: disc;
+        list-style-position: inside;
+    }
+
+    &__btn {
+        margin-top: 38px;
+        max-width: 212px;
+
+        @include abstracts.screen(sm){
+            margin-top: 30px;
+        }
+    }
+
+    //Images
+    &__images{
+        @include abstracts.screen(md) {
+            width: 100%;
+            margin-top: 89px;
+        }
+
+        @include abstracts.screen(sm) {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    &__image {
+        position: relative;
+        width: 570px;
+
+        @include abstracts.screen(lg) {
+            width: 470px;
+        }
+
+        @include abstracts.screen(sm) {
+            width: 338.309px;
+        }
+    }
+
+    &__image--bg {
+        width: 100%;
+        height: 478px;
+        border-radius: 12px;
+        background: #FFCF54;
+
+        @include abstracts.screen(lg) {
+            width: 100%;
+        }
+
+
+        @include abstracts.screen(sm) {
+            height: 283.705px;
+        }
+
+    }
+
+    &__image--sub-bg {
+        padding-top: 46px;
+        position: absolute;
+        top: -39px;
+        left: 50%;
+        translate: -50%;
+        width: 494px;
+        height: 510px;
+        border-radius: 12px;
+        background: #29B067;
+
+        @include abstracts.screen(lg) {
+            width: 400px;
+            height: 550px;
+        }
+
+        @include abstracts.screen(sm) {
+            width: 293.201px;
+            height: 330px;
+        }
+       
+    }
+
+    &__banner{
+        position: absolute;
+        top: -25px;
+        left: 72px;
+    }
+
+    &__banner-img{
+        position: absolute;
+       top: 14px;
+       left: 22px;
+       
+       @include abstracts.screen(sm) {
+        width: 213.076px;
+        height: 242.158px;
+    }
+    }
+
+    &__avatar-bg{
+        display: block;
+        position: relative;
+        z-index: 99;
+
+        @include abstracts.screen(lg) {
+            width: 400px;
+            height: 100%;
+        }
+
+        @include abstracts.screen(sm) {
+            width: 293.201px;
+            height: 302.698px;
+        }
+    }
+
+
+    &__play{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+
+        @include abstracts.screen(sm) {
+            width: 78px;
+        }
+      
+    }
+
+}
