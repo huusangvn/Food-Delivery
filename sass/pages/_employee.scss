@@ -1,11 +1,11 @@
 @use "../abstracts";
 
 .employee {
-    padding: 80px 0;
+    padding: 80px 0 160px;
     background: #fff;
 
     @include abstracts.screen(md){
-        padding: 70px 0;
+        padding: 70px 0 93px;
     }
 
     .row {

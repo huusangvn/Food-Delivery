@@ -1,0 +1,138 @@
+@use "../abstracts";
+
+.faster {
+    position: relative;
+    background: var(--Yellow, #FFCF54);
+    height: 695px;
+
+    @include abstracts.screen(lg) {
+        height: 530px;
+    }
+
+
+    @include abstracts.screen(md) {
+        height: 425px;
+    }
+
+
+    @include abstracts.screen(sm) {
+        height: 328px;
+    }
+
+    &__half-none {
+        padding-bottom: 80px;
+
+        @include abstracts.screen(md) {
+            padding-bottom: 35px;
+        }
+    }
+
+
+    &__top {
+        position: relative;
+        z-index: 1;
+        padding-top: 100px;
+        max-width: 470px;
+        text-align: center;
+        margin: 0 auto;
+
+        @include abstracts.screen(sm) {
+            padding-top: 50px;
+        }
+
+    }
+
+    &__heading {
+        @include abstracts.screen(sm) {
+            font-size: 3.4rem;
+        }
+    }
+
+    &__desc {
+        margin-top: 18px;
+
+        @include abstracts.screen(sm) {
+            margin-top: 12px;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__images {
+        position: relative;
+        margin: 55px 0;
+        z-index: 1;
+
+        @include abstracts.screen(sm) {
+            margin: 30px 0;
+        }
+    }
+
+    @include abstracts.screen(xl) {
+        &__phone {
+            width: 300px;
+        }
+    }
+
+    @include abstracts.screen(lg) {
+        &__phone {
+            width: 230px;
+        }
+    }
+
+    @include abstracts.screen(md) {
+        &__phone {
+            width: 160px;
+        }
+    }
+
+    @include abstracts.screen(md) {
+        &__phone {
+            width: 107px;
+        }
+    }
+
+    &__act {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    @include abstracts.screen(sm) {
+        &__act {
+            flex-direction: column;
+            gap: 18px;
+            align-items: center;
+        }
+
+        &__act-img {
+            width: 180px;
+            transition: scale 0.3s;
+
+            &:hover {
+                width: 202.5px;
+            }
+        }
+    }
+
+
+
+    &__sub-img-1,
+    &__sub-img-2 {
+        position: absolute;
+        top: 144px;
+
+        @include abstracts.screen(md) {
+            width: 210px;
+        }
+    }
+
+    &__sub-img-1 {
+        left: 50px;
+    }
+
+    &__sub-img-2 {
+        right: 50px;
+    }
+
+}

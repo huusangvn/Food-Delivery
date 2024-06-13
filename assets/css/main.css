@@ -2095,12 +2095,12 @@ input {
 }
 
 .employee {
-  padding: 80px 0;
+  padding: 80px 0 160px;
   background: #fff;
 }
 @media (max-width: 767.98px) {
   .employee {
-    padding: 70px 0;
+    padding: 70px 0 93px;
   }
 }
 .employee .row {
@@ -2236,6 +2236,126 @@ input {
   .employee__play {
     width: 78px;
   }
+}
+
+.faster {
+  position: relative;
+  background: var(--Yellow, #FFCF54);
+  height: 695px;
+}
+@media (max-width: 991.98px) {
+  .faster {
+    height: 530px;
+  }
+}
+@media (max-width: 767.98px) {
+  .faster {
+    height: 425px;
+  }
+}
+@media (max-width: 575.98px) {
+  .faster {
+    height: 328px;
+  }
+}
+.faster__half-none {
+  padding-bottom: 80px;
+}
+@media (max-width: 767.98px) {
+  .faster__half-none {
+    padding-bottom: 35px;
+  }
+}
+.faster__top {
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  max-width: 470px;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 575.98px) {
+  .faster__top {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 575.98px) {
+  .faster__heading {
+    font-size: 3.4rem;
+  }
+}
+.faster__desc {
+  margin-top: 18px;
+}
+@media (max-width: 575.98px) {
+  .faster__desc {
+    margin-top: 12px;
+    font-size: 1.6rem;
+  }
+}
+.faster__images {
+  position: relative;
+  margin: 55px 0;
+  z-index: 1;
+}
+@media (max-width: 575.98px) {
+  .faster__images {
+    margin: 30px 0;
+  }
+}
+@media (max-width: 1199.98px) {
+  .faster__phone {
+    width: 300px;
+  }
+}
+@media (max-width: 991.98px) {
+  .faster__phone {
+    width: 230px;
+  }
+}
+@media (max-width: 767.98px) {
+  .faster__phone {
+    width: 160px;
+  }
+}
+@media (max-width: 767.98px) {
+  .faster__phone {
+    width: 107px;
+  }
+}
+.faster__act {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 575.98px) {
+  .faster__act {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .faster__act-img {
+    width: 180px;
+    transition: scale 0.3s;
+  }
+  .faster__act-img:hover {
+    width: 202.5px;
+  }
+}
+.faster__sub-img-1, .faster__sub-img-2 {
+  position: absolute;
+  top: 144px;
+}
+@media (max-width: 767.98px) {
+  .faster__sub-img-1, .faster__sub-img-2 {
+    width: 210px;
+  }
+}
+.faster__sub-img-1 {
+  left: 50px;
+}
+.faster__sub-img-2 {
+  right: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */
