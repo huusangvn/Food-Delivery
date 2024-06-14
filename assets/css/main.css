@@ -187,6 +187,14 @@ input {
   line-height: 138.462%;
 }
 
+.separate {
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  opacity: 0.2;
+  background: #572AF8;
+}
+
 .row > *, .container-fluid, .container {
   padding-left: calc(var(--grid-gutter-x) * 0.5);
   padding-right: calc(var(--grid-gutter-x) * 0.5);
@@ -2336,7 +2344,7 @@ input {
   }
   .faster__act-img {
     width: 180px;
-    transition: scale 0.3s;
+    transition: width 0.3s;
   }
   .faster__act-img:hover {
     width: 202.5px;
@@ -2356,6 +2364,124 @@ input {
 }
 .faster__sub-img-2 {
   right: 50px;
+}
+
+.saying {
+  padding: 640px 0 80px;
+}
+@media (max-width: 1199.98px) {
+  .saying {
+    padding-top: 500px;
+  }
+}
+@media (max-width: 767.98px) {
+  .saying {
+    padding-top: 340px;
+  }
+  .saying__inner {
+    position: relative;
+  }
+  .saying__heading {
+    font-size: 3.4rem;
+  }
+}
+.saying .row {
+  align-items: flex-end;
+}
+@media (max-width: 767.98px) {
+  .saying__row {
+    flex-wrap: nowrap;
+  }
+}
+.saying__list-review {
+  margin-top: 69px;
+}
+@media (max-width: 767.98px) {
+  .saying__list-review {
+    margin-top: 30px;
+    padding-top: 14px;
+    min-height: 257px;
+    overflow: hidden;
+  }
+}
+.saying__review {
+  position: relative;
+  padding: 30px 20px;
+  border-radius: 12px;
+  background: #FFF;
+}
+@media (max-width: 767.98px) {
+  .saying__review {
+    padding: 30px 12px 12px;
+  }
+}
+.saying__review:hover {
+  box-shadow: 0px 20px 70px 0px rgba(27, 12, 84, 0.07);
+}
+.saying__review:hover .saying__quotation {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(72%) saturate(4804%) hue-rotate(251deg) brightness(105%) contrast(97%);
+}
+.saying__review:hover .saying__name {
+  color: var(--primary-color);
+}
+.saying__quotation {
+  position: absolute;
+  top: -14px;
+  left: 20px;
+  transition: color 0.3s;
+}
+@media (max-width: 767.98px) {
+  .saying__quotation {
+    left: 12px;
+  }
+}
+.saying__desc {
+  margin: 16px 0 20px;
+}
+@media (max-width: 767.98px) {
+  .saying__desc {
+    width: 315px;
+    line-height: 175%;
+  }
+}
+.saying__name {
+  margin-top: 20px;
+  font-family: Manrope;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 150%;
+  transition: 0.3s;
+}
+@media (max-width: 767.98px) {
+  .saying__name {
+    font-size: 1.8rem;
+    line-height: 166.667%;
+  }
+}
+.saying__job {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 171.429%;
+}
+@media (max-width: 767.98px) {
+  .saying__job {
+    font-size: 1.4rem;
+    line-height: 171.429%;
+  }
+}
+.saying__scroll {
+  text-align: end;
+}
+.saying__scroll img {
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  .saying__scroll {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    bottom: -60px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

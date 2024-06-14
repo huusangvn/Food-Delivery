@@ -1,0 +1,125 @@
+@use "../abstracts";
+
+.saying {
+    padding: 640px 0 80px;
+
+    @include abstracts.screen(xl) {
+        padding-top: 500px;
+    }
+
+    @include abstracts.screen(md) {
+        padding-top: 340px;
+
+        &__inner {
+            position: relative;
+        }
+
+        &__heading {
+            font-size: 3.4rem;
+        }
+    }
+
+    .row {
+        align-items: flex-end;
+    }
+
+    &__row {
+        @include abstracts.screen(md) {
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__list-review {
+        margin-top: 69px;
+
+        @include abstracts.screen(md) {
+            margin-top: 30px;
+            padding-top: 14px;
+            min-height: 257px;
+            overflow: hidden;
+        }
+    }
+
+    &__review {
+        position: relative;
+        padding: 30px 20px;
+        border-radius: 12px;
+        background: #FFF;
+
+        @include abstracts.screen(md) {
+            padding: 30px 12px 12px;
+        }
+    }
+
+    &__review:hover {
+        box-shadow: 0px 20px 70px 0px rgba(27, 12, 84, 0.07);
+    }
+
+    &__review:hover &__quotation {
+        filter: brightness(0) saturate(100%) invert(15%) sepia(72%) saturate(4804%) hue-rotate(251deg) brightness(105%) contrast(97%);
+    }
+
+    &__review:hover &__name {
+        color: var(--primary-color);
+    }
+
+    &__quotation {
+        position: absolute;
+        top: -14px;
+        left: 20px;
+        transition: color 0.3s;
+
+        @include abstracts.screen(md) {
+            left: 12px;
+        }
+    }
+
+    &__desc {
+        margin: 16px 0 20px;
+
+        @include abstracts.screen(md) {
+            width: 315px;
+            line-height: 175%;
+        }
+    }
+
+    &__name {
+        margin-top: 20px;
+        font-family: Manrope;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 150%;
+        transition: 0.3s;
+
+        @include abstracts.screen(md) {
+            font-size: 1.8rem;
+            line-height: 166.667%;
+        }
+    }
+
+    &__job {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 171.429%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+            line-height: 171.429%;
+        }
+    }
+
+    &__scroll {
+        text-align: end;
+
+        img {
+            width: 100%;
+        }
+
+        @include abstracts.screen(md) {
+            position: absolute;
+            left: 50%;
+            translate: -50%;
+            bottom: -60px;
+        }
+    }
+}

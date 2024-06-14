@@ -1,507 +1,714 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Delivery</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Food Delivery</title>
 
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
 
-    <!-- Font -->
-    <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+        <!-- Font -->
+        <link rel="stylesheet" href="./assets/font/stylesheet.css" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
 
-    <!-- JS -->
-    <script src="./assets/javascript/script.js"></script>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header" id="header"></header>
-    <script>
-      load("#header", "./templates/header.html");
-    </script>
+        <!-- JS -->
+        <script src="./assets/javascript/script.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header" id="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
 
-    <!-- Main -->
-    <div class="container home">
-      <!-- Hero -->
-      <section class="hero">
-        <div class="row">
-          <div class="col-5 col-lg-12">
-            <div class="hero__content">
-              <div class="hero__sub-heading">#The Best in Town</div>
-              <h1 class="hero__heading">
-                Get food
-                <img
-                  src="./assets/icons/logo.svg"
-                  alt=""
-                  class="hero__heading-icon"
-                />
-                delivery and more
-                <img
-                  src="./assets/icons/logo-2.svg"
-                  alt=""
-                  class="hero__heading-icon"
-                />
-              </h1>
-              <p class="hero__desc desc">
-                You want it. We get it. Food, drinks, groceries, and more
-                available for delivery and pickup.
-              </p>
+        <!-- Main -->
+        <div class="container home">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="row">
+                    <div class="col-5 col-lg-12">
+                        <div class="hero__content">
+                            <div class="hero__sub-heading">
+                                #The Best in Town
+                            </div>
+                            <h1 class="hero__heading">
+                                Get food
+                                <img
+                                    src="./assets/icons/logo.svg"
+                                    alt=""
+                                    class="hero__heading-icon"
+                                />
+                                delivery and more
+                                <img
+                                    src="./assets/icons/logo-2.svg"
+                                    alt=""
+                                    class="hero__heading-icon"
+                                />
+                            </h1>
+                            <p class="hero__desc desc">
+                                You want it. We get it. Food, drinks, groceries,
+                                and more available for delivery and pickup.
+                            </p>
 
-              <div class="hero__location">
-                <form action="" class="hero__form">
-                  <button class="hero__btn">
-                    <img
-                      src="./assets/icons/location.svg"
-                      alt=""
-                      class="hero__location-icon"
-                    />
-                    <input
-                      type="text"
-                      class="hero____form-input"
-                      placeholder="Location or zip code"
-                    />
-                  </button>
-                  <button class="btn hero__form--submit-btn">Explore</button>
-                </form>
-              </div>
+                            <div class="hero__location">
+                                <form action="" class="hero__form">
+                                    <button class="hero__btn">
+                                        <img
+                                            src="./assets/icons/location.svg"
+                                            alt=""
+                                            class="hero__location-icon"
+                                        />
+                                        <input
+                                            type="text"
+                                            class="hero____form-input"
+                                            placeholder="Location or zip code"
+                                        />
+                                    </button>
+                                    <button class="btn hero__form--submit-btn">
+                                        Explore
+                                    </button>
+                                </form>
+                            </div>
 
-              <div class="hero__get-app">
-                Get the app:
-                <a href="#!">
-                  <img
-                    src="./assets/icons/apple.svg"
-                    alt=""
-                    class="hero__get-app-icon"
-                /></a>
-                <a href="#!">
-                  <img
-                    src="./assets/icons/androi.svg"
-                    alt=""
-                    class="hero__get-app-icon"
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 offset-1 offset-lg-0 col-lg-12">
-            <div class="food-intro">
-              <div class="food-intro__image">
-                <div class="food-intro__image--bg"></div>
-                <div class="food-intro__image--sub-bg"></div>
-                <div class="food-intro__image--banner">
-                  <img
-                    src="./assets/img/banner-food-delivery.png"
-                    alt=""
-                    class="food-intro__image--banner-img"
-                  />
-                </div>
-                <div class="food-intro__image--sub-banner">
-                  <img
-                    src="./assets/img/sub--banner.png"
-                    alt=""
-                    class="food-intro__image--sub-banner-img"
-                  />
-                </div>
-                <div class="food-intro__delivery">
-                  <img
-                    src="./assets/img/deliveryman.png"
-                    alt=""
-                    class="food-intro__delivery-man"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- Away -->
-    <section class="away">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="away__top">
-              <h2 class="away__heading heading">Your everyday, right away</h2>
-              <p class="away_desc desc">
-                Order food and grocery delivery online from hundreds of
-                restaurants and shops nearby.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-12">
-            <div class="away__list-item">
-              <div class="row row-cols-3 row-cols-lg-1 gy-md-2">
-                <!-- Item 1 -->
-                <div class="col">
-                  <article class="away__item">
-                    <div>
-                      <img
-                        src="./assets/img/food-category/food-category-1.png"
-                        alt=""
-                        class="away__item-img"
-                      />
+                            <div class="hero__get-app">
+                                Get the app:
+                                <a href="#!">
+                                    <img
+                                        src="./assets/icons/apple.svg"
+                                        alt=""
+                                        class="hero__get-app-icon"
+                                /></a>
+                                <a href="#!">
+                                    <img
+                                        src="./assets/icons/androi.svg"
+                                        alt=""
+                                        class="hero__get-app-icon"
+                                /></a>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="away__title title">Food Items</h3>
-                    <p class="away__item-desc desc">
-                      Find deals, free delivery, and more from our restaurant
-                      partners.
-                    </p>
-                    <a href="#!" class="away__item-link">Explore</a>
-                  </article>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="col">
-                  <article class="away__item">
-                    <div>
-                      <img
-                        src="./assets/img/food-category/food-category-2.png"
-                        alt=""
-                        class="away__item-img"
-                      />
+                    <div class="col-6 offset-1 offset-lg-0 col-lg-12">
+                        <div class="food-intro">
+                            <div class="food-intro__image">
+                                <div class="food-intro__image--bg"></div>
+                                <div class="food-intro__image--sub-bg"></div>
+                                <div class="food-intro__image--banner">
+                                    <img
+                                        src="./assets/img/banner-food-delivery.png"
+                                        alt=""
+                                        class="food-intro__image--banner-img"
+                                    />
+                                </div>
+                                <div class="food-intro__image--sub-banner">
+                                    <img
+                                        src="./assets/img/sub--banner.png"
+                                        alt=""
+                                        class="food-intro__image--sub-banner-img"
+                                    />
+                                </div>
+                                <div class="food-intro__delivery">
+                                    <img
+                                        src="./assets/img/deliveryman.png"
+                                        alt=""
+                                        class="food-intro__delivery-man"
+                                    />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="away__title title">Groceries</h3>
-                    <p class="away__item-desc desc">
-                      Find deals, free delivery, and more from our restaurant
-                      partners.
-                    </p>
-                    <a href="#!" class="away__item-link">Explore</a>
-                  </article>
                 </div>
+            </section>
+        </div>
 
-                <!-- Item 3 -->
-                <div class="col">
-                  <article class="away__item">
-                    <div>
-                      <img
-                        src="./assets/img/food-category/food-category-3.png"
-                        alt=""
-                        class="away__item-img"
-                      />
+        <!-- Away -->
+        <section class="away">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="away__top">
+                            <h2 class="away__heading heading">
+                                Your everyday, right away
+                            </h2>
+                            <p class="away_desc desc">
+                                Order food and grocery delivery online from
+                                hundreds of restaurants and shops nearby.
+                            </p>
+                        </div>
                     </div>
-                    <h3 class="away__title title">Flower Items</h3>
-                    <p class="away__item-desc desc">
-                      Find deals, free delivery, and more from our restaurant
-                      partners.
-                    </p>
-                    <a href="#!" class="away__item-link">Explore</a>
-                  </article>
+
+                    <div class="col-12">
+                        <div class="away__list-item">
+                            <div class="row row-cols-3 row-cols-lg-1 gy-md-2">
+                                <!-- Item 1 -->
+                                <div class="col">
+                                    <article class="away__item">
+                                        <div>
+                                            <img
+                                                src="./assets/img/food-category/food-category-1.png"
+                                                alt=""
+                                                class="away__item-img"
+                                            />
+                                        </div>
+                                        <h3 class="away__title title">
+                                            Food Items
+                                        </h3>
+                                        <p class="away__item-desc desc">
+                                            Find deals, free delivery, and more
+                                            from our restaurant partners.
+                                        </p>
+                                        <a href="#!" class="away__item-link"
+                                            >Explore</a
+                                        >
+                                    </article>
+                                </div>
+
+                                <!-- Item 2 -->
+                                <div class="col">
+                                    <article class="away__item">
+                                        <div>
+                                            <img
+                                                src="./assets/img/food-category/food-category-2.png"
+                                                alt=""
+                                                class="away__item-img"
+                                            />
+                                        </div>
+                                        <h3 class="away__title title">
+                                            Groceries
+                                        </h3>
+                                        <p class="away__item-desc desc">
+                                            Find deals, free delivery, and more
+                                            from our restaurant partners.
+                                        </p>
+                                        <a href="#!" class="away__item-link"
+                                            >Explore</a
+                                        >
+                                    </article>
+                                </div>
+
+                                <!-- Item 3 -->
+                                <div class="col">
+                                    <article class="away__item">
+                                        <div>
+                                            <img
+                                                src="./assets/img/food-category/food-category-3.png"
+                                                alt=""
+                                                class="away__item-img"
+                                            />
+                                        </div>
+                                        <h3 class="away__title title">
+                                            Flower Items
+                                        </h3>
+                                        <p class="away__item-desc desc">
+                                            Find deals, free delivery, and more
+                                            from our restaurant partners.
+                                        </p>
+                                        <a href="#!" class="away__item-link"
+                                            >Explore</a
+                                        >
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Quality -->
-    <section class="quality">
-      <div class="container">
-        <div class="quality__inner">
-          <div class="row">
-            <div
-              class="col-8 offset-2 col-xl-9 offset-lg-1 col-lg-6 col-md-12 offset-md-0"
-            >
-              <div class="quality__numbers">
-                <div class="quality__number">
-                  <h3 class="quality__number-title">350+</h3>
-                  <p class="quality__number-desc desc">Order per minute</p>
+        <!-- Quality -->
+        <section class="quality">
+            <div class="container">
+                <div class="quality__inner">
+                    <div class="row">
+                        <div
+                            class="col-8 offset-2 col-xl-9 offset-lg-1 col-lg-6 col-md-12 offset-md-0"
+                        >
+                            <div class="quality__numbers">
+                                <div class="quality__number">
+                                    <h3 class="quality__number-title">350+</h3>
+                                    <p class="quality__number-desc desc">
+                                        Order per minute
+                                    </p>
+                                </div>
+                                <div class="quality__number">
+                                    <h3 class="quality__number-title">10x</h3>
+                                    <p class="quality__number-desc desc">
+                                        Faster delivery
+                                    </p>
+                                </div>
+
+                                <div class="quality__number">
+                                    <h3 class="quality__number-title">10+</h3>
+                                    <p class="quality__number-desc desc">
+                                        In Country
+                                    </p>
+                                </div>
+                                <div class="quality__number">
+                                    <h3 class="quality__number-title">99.9%</h3>
+                                    <p class="quality__number-desc desc">
+                                        Order accuracy
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality__detail-1">
+                        <img
+                            src="./assets/img/about-food/quality-detail-1.png"
+                            alt=""
+                            class="quality__detail-img-1"
+                        />
+                    </div>
+                    <div class="quality__detail-2">
+                        <img
+                            src="./assets/img/about-food/quality-detail-2.png"
+                            alt=""
+                            class="quality__detail-img-2"
+                        />
+                    </div>
                 </div>
-                <div class="quality__number">
-                  <h3 class="quality__number-title">10x</h3>
-                  <p class="quality__number-desc desc">Faster delivery</p>
+            </div>
+        </section>
+
+        <!-- AboutFood -->
+        <section class="about-food">
+            <div class="container">
+                <div class="about-food__inner">
+                    <div class="row about-food__row">
+                        <!-- About images -->
+                        <div class="col-6 col-lg-7 col-md-12">
+                            <div class="food-intro">
+                                <div class="food-intro__image">
+                                    <div
+                                        class="food-intro__image--bg about-food__image-bg"
+                                    ></div>
+                                    <div
+                                        class="food-intro__image--sub-bg about-food__image-sub-bg"
+                                    ></div>
+                                    <div class="about-food__delivery">
+                                        <img
+                                            src="./assets/img/about-food/about-food-bg.png"
+                                            alt=""
+                                            class="about-food__img"
+                                        />
+                                    </div>
+                                    <!-- Detail 1 -->
+                                    <div
+                                        class="about-food__detail about-food__detail-1"
+                                    >
+                                        <img
+                                            src="./assets/img/about-food/detail-food-1.png"
+                                            alt=""
+                                            class="about-food__detail-img-1"
+                                        />
+                                    </div>
+                                    <!-- Detail 2 -->
+                                    <div
+                                        class="about-food__detail about-food__detail-2"
+                                    >
+                                        <img
+                                            src="./assets/img/about-food/detail-food-2.png"
+                                            alt=""
+                                            class="about-food__detail-img-2"
+                                        />
+                                    </div>
+                                    <!-- Detail 3 -->
+                                    <div
+                                        class="about-food__detail about-food__detail-3"
+                                    >
+                                        <img
+                                            src="./assets/img/about-food/detail-food-3.png"
+                                            alt=""
+                                            class="about-food__detail-img-3"
+                                        />
+                                    </div>
+                                    <!-- Detail 4 -->
+                                    <div
+                                        class="about-food__detail about-food__detail-4"
+                                    >
+                                        <img
+                                            src="./assets/img/about-food/detail-food-4.png"
+                                            alt=""
+                                            class="about-food__detail-img-4"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- About Content -->
+                        <div
+                            class="col-5 offset-1 col-lg-5 col-md-12 offset-lg-0"
+                        >
+                            <h2 class="about-food__heading heading">
+                                About Foodeats
+                            </h2>
+                            <p class="about-food__desc desc">
+                                Foodeats helps you find and order food from
+                                wherever you are. How it works: you type in an
+                                address, we tell you the restaurants that
+                                deliver to that locale as well as showing you
+                                droves of pickup restaurants near you.
+                            </p>
+                            <p class="desc">
+                                Want to be more specific? Search by cuisine,
+                                restaurant name or menu item. We'll filter your
+                                results accordingly.
+                            </p>
+
+                            <a href="#!" class="about-food__btn btn"
+                                >Learn More</a
+                            >
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="quality__number">
-                  <h3 class="quality__number-title">10+</h3>
-                  <p class="quality__number-desc desc">In Country</p>
+        <!-- Platform -->
+        <section class="platform">
+            <div class="platform__inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="platform__top">
+                                <h2 class="platform__heading heading">
+                                    It’s all here. All in one platform.
+                                </h2>
+                                <p class="platform__desc desc">
+                                    Order food and grocery delivery online from
+                                    hundreds of restaurants and shops nearby.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Items -->
+                    <div class="platform__items">
+                        <div class="row row-cols-2 row-cols-md-1 gy-sm-2">
+                            <div class="col">
+                                <article class="platform__item">
+                                    <div>
+                                        <img
+                                            src="./assets/img/flatform/flatform-1.png"
+                                            alt=""
+                                            class="platform__img"
+                                        />
+                                    </div>
+                                    <h3 class="platform__title title">
+                                        Deliver With Us
+                                    </h3>
+                                    <p class="desc">
+                                        Sign up today, start earning tomorrow.
+                                        Build a new career in delivery service
+                                        with us.
+                                    </p>
+                                    <a href="#!" class="platform__btn btn"
+                                        >Learn More</a
+                                    >
+                                </article>
+                            </div>
+
+                            <div class="col">
+                                <article class="platform__item">
+                                    <div>
+                                        <img
+                                            src="./assets/img/flatform/flatform-2.png"
+                                            alt=""
+                                            class="platform__img"
+                                        />
+                                    </div>
+                                    <h3 class="platform__title title">
+                                        Partner With Us
+                                    </h3>
+                                    <p class="desc">
+                                        Sign up today, start earning tomorrow.
+                                        Build a new career in delivery service
+                                        with us.
+                                    </p>
+                                    <a href="#!" class="platform__btn btn"
+                                        >Learn More</a
+                                    >
+                                </article>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="quality__number">
-                  <h3 class="quality__number-title">99.9%</h3>
-                  <p class="quality__number-desc desc">Order accuracy</p>
+            </div>
+        </section>
+
+        <!-- Employee -->
+        <section class="employee">
+            <div class="container">
+                <div class="employee__ineer">
+                    <div class="row">
+                        <div class="col-5 col-md-12">
+                            <div class="employee__content">
+                                <h2 class="employee__heading heading">
+                                    Feed your employees
+                                </h2>
+                                <p class="employee__desc desc">
+                                    Fuel your business with great food. Treat
+                                    employees and clients to corporate meals
+                                    with food delivery that’s customizable to
+                                    your business.
+                                </p>
+                                <ul class="employee__list-item">
+                                    <li class="employee__item desc">
+                                        Meals in the office
+                                    </li>
+                                    <li class="employee__item desc">
+                                        Meals after hours
+                                    </li>
+                                    <li class="employee__item desc">
+                                        Meals at home
+                                    </li>
+                                    <li class="employee__item desc">
+                                        Meals while traveling
+                                    </li>
+                                </ul>
+
+                                <a href="#!" class="employee__btn btn"
+                                    >Get Started Now</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="col-6 col-xl-7 col-md-12 offset-1 offset-xl-0"
+                        >
+                            <div class="employee__images">
+                                <div class="employee__image">
+                                    <div class="employee__image--bg"></div>
+                                    <div class="employee__image--sub-bg">
+                                        <img
+                                            src="./assets/img/sub--banner-2.png"
+                                            alt=""
+                                            class="employee__banner-img"
+                                        />
+                                        <img
+                                            src="./assets/img/Employee/employee-1.png"
+                                            alt=""
+                                            class="employee__avatar-bg"
+                                        />
+                                    </div>
+                                    <img
+                                        src="./assets/icons/play.svg"
+                                        alt=""
+                                        class="employee__play"
+                                    />
+                                    <div class="employee__banner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="quality__detail-1">
-            <img
-              src="./assets/img/about-food/quality-detail-1.png"
-              alt=""
-              class="quality__detail-img-1"
-            />
-          </div>
-          <div class="quality__detail-2">
-            <img
-              src="./assets/img/about-food/quality-detail-2.png"
-              alt=""
-              class="quality__detail-img-2"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- AboutFood -->
-    <section class="about-food">
-      <div class="container">
-        <div class="about-food__inner">
-          <div class="row about-food__row">
-            <!-- About images -->
-            <div class="col-6 col-lg-7 col-md-12">
-              <div class="food-intro">
-                <div class="food-intro__image">
-                  <div class="food-intro__image--bg about-food__image-bg"></div>
-                  <div
-                    class="food-intro__image--sub-bg about-food__image-sub-bg"
-                  ></div>
-                  <div class="about-food__delivery">
-                    <img
-                      src="./assets/img/about-food/about-food-bg.png"
-                      alt=""
-                      class="about-food__img"
-                    />
-                  </div>
-                  <!-- Detail 1 -->
-                  <div class="about-food__detail about-food__detail-1">
-                    <img
-                      src="./assets/img/about-food/detail-food-1.png"
-                      alt=""
-                      class="about-food__detail-img-1"
-                    />
-                  </div>
-                  <!-- Detail 2 -->
-                  <div class="about-food__detail about-food__detail-2">
-                    <img
-                      src="./assets/img/about-food/detail-food-2.png"
-                      alt=""
-                      class="about-food__detail-img-2"
-                    />
-                  </div>
-                  <!-- Detail 3 -->
-                  <div class="about-food__detail about-food__detail-3">
-                    <img
-                      src="./assets/img/about-food/detail-food-3.png"
-                      alt=""
-                      class="about-food__detail-img-3"
-                    />
-                  </div>
-                  <!-- Detail 4 -->
-                  <div class="about-food__detail about-food__detail-4">
-                    <img
-                      src="./assets/img/about-food/detail-food-4.png"
-                      alt=""
-                      class="about-food__detail-img-4"
-                    />
-                  </div>
+        <!-- Faster -->
+        <section class="faster">
+            <div class="container">
+                <div class="faster__inner">
+                    <div class="faster__half-none">
+                        <img
+                            src="./assets/icons/start-bg-1.svg"
+                            alt=""
+                            class="faster__sub-img-1 d-md-none"
+                        />
+                        <img
+                            src="./assets/icons/start-bg-2.svg"
+                            alt=""
+                            class="faster__sub-img-2 d-md-none"
+                        />
+
+                        <div class="faster__top">
+                            <h2 class="faster__heading heading">
+                                Find your flavour even faster
+                            </h2>
+                            <p class="faster__desc desc">
+                                Download the Just Eat app for faster ordering
+                                and more personalised recommendations.
+                            </p>
+                        </div>
+
+                        <div class="faster__images">
+                            <div class="row row-cols-3">
+                                <div class="col-4">
+                                    <img
+                                        src="./assets/img/Phones/phone-1.png"
+                                        alt=""
+                                        class="faster__phone"
+                                    />
+                                </div>
+                                <div class="col-4">
+                                    <img
+                                        src="./assets/img/Phones/phone-2.png"
+                                        alt=""
+                                        class="faster__phone"
+                                    />
+                                </div>
+                                <div class="col-4">
+                                    <img
+                                        src="./assets/img/Phones/phone-3.png"
+                                        alt=""
+                                        class="faster__phone"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faster__act">
+                            <img
+                                src="./assets/img/Phones/chplay.png"
+                                alt=""
+                                class="faster__act-img"
+                            />
+                            <img
+                                src="./assets/img/Phones/appstore.png"
+                                alt=""
+                                class="faster__act-img"
+                            />
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
+        </section>
 
-            <!-- About Content -->
-            <div class="col-5 offset-1 col-lg-5 col-md-12 offset-lg-0">
-              <h2 class="about-food__heading heading">About Foodeats</h2>
-              <p class="about-food__desc desc">
-                Foodeats helps you find and order food from wherever you are.
-                How it works: you type in an address, we tell you the
-                restaurants that deliver to that locale as well as showing you
-                droves of pickup restaurants near you.
-              </p>
-              <p class="desc">
-                Want to be more specific? Search by cuisine, restaurant name or
-                menu item. We'll filter your results accordingly.
-              </p>
+        <!-- Saying -->
+        <section class="saying">
+            <div class="saying__inner">
+                <div class="container">
+                    <div class="saying__top">
+                        <div class="row">
+                            <div class="col-5 col-lg-7 col-md-12">
+                                <h2 class="saying__heading heading">
+                                    What food lovers are saying about us
+                                </h2>
+                            </div>
+                            <div class="col-2 offset-5 offset-lg-3">
+                                <div class="saying__scroll">
+                                    <img
+                                        src="./assets/icons/scroll.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-              <a href="#!" class="about-food__btn btn">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <!-- Reviews-->
+                    <div class="saying__list-review">
+                        <div
+                            class="row row-cols-3 row-cols-md-1 gy-md-4 saying__row"
+                        >
+                            <!-- Review 1 -->
+                            <div class="col">
+                                <article class="saying__review">
+                                    <img
+                                        src="./assets/icons/quotation.svg"
+                                        alt=""
+                                        class="saying__quotation"
+                                    />
+                                    <div class="saying__starts">
+                                        <img
+                                            src="./assets/img/starts.png"
+                                            alt=""
+                                            class="saying__starts-img"
+                                        />
+                                    </div>
+                                    <p class="saying__desc desc">
+                                        I’m obsessed with excellent customer
+                                        service...thanks foodeats for being
+                                        awesome!
+                                    </p>
+                                    <div class="separate"></div>
+                                    <h3 class="saying__name">Peter Moor</h3>
+                                    <p class="saying__job">UI/UX Designer</p>
+                                </article>
+                            </div>
 
-    <!-- Platform -->
-    <section class="platform">
-      <div class="platform__inner">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="platform__top">
-                <h2 class="platform__heading heading">
-                  It’s all here. All in one platform.
-                </h2>
-                <p class="platform__desc desc">
-                  Order food and grocery delivery online from hundreds of
-                  restaurants and shops nearby.
-                </p>
-              </div>
-            </div>
-          </div>
+                            <!-- Review 2 -->
+                            <div class="col">
+                                <article class="saying__review">
+                                    <img
+                                        src="./assets/icons/quotation.svg"
+                                        alt=""
+                                        class="saying__quotation"
+                                    />
+                                    <div class="saying__starts">
+                                        <img
+                                            src="./assets/img/starts.png"
+                                            alt=""
+                                            class="saying__starts-img"
+                                        />
+                                    </div>
+                                    <p class="saying__desc desc">
+                                        I’m obsessed with excellent customer
+                                        service...thanks foodeats for being
+                                        awesome!
+                                    </p>
+                                    <div class="separate"></div>
+                                    <h3 class="saying__name">Peter Moor</h3>
+                                    <p class="saying__job">UI/UX Designer</p>
+                                </article>
+                            </div>
 
-          <!-- Items -->
-          <div class="platform__items">
-            <div class="row row-cols-2 row-cols-md-1 gy-sm-2">
-              <div class="col">
-                <article class="platform__item">
-                  <div>
-                    <img
-                      src="./assets/img/flatform/flatform-1.png"
-                      alt=""
-                      class="platform__img"
-                    />
-                  </div>
-                  <h3 class="platform__title title">Deliver With Us</h3>
-                  <p class="desc">
-                    Sign up today, start earning tomorrow. Build a new career in
-                    delivery service with us.
-                  </p>
-                  <a href="#!" class="platform__btn btn">Learn More</a>
-                </article>
-              </div>
-
-              <div class="col">
-                <article class="platform__item">
-                  <div>
-                    <img
-                      src="./assets/img/flatform/flatform-2.png"
-                      alt=""
-                      class="platform__img"
-                    />
-                  </div>
-                  <h3 class="platform__title title">Partner With Us</h3>
-                  <p class="desc">
-                    Sign up today, start earning tomorrow. Build a new career in
-                    delivery service with us.
-                  </p>
-                  <a href="#!" class="platform__btn btn">Learn More</a>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Employee -->
-    <section class="employee">
-      <div class="container">
-        <div class="employee__ineer">
-          <div class="row">
-            <div class="col-5 col-md-12">
-              <div class="employee__content">
-                <h2 class="employee__heading heading">Feed your employees</h2>
-                <p class="employee__desc desc">
-                  Fuel your business with great food. Treat employees and
-                  clients to corporate meals with food delivery that’s
-                  customizable to your business.
-                </p>
-                <ul class="employee__list-item">
-                  <li class="employee__item desc">Meals in the office</li>
-                  <li class="employee__item desc">Meals after hours</li>
-                  <li class="employee__item desc">Meals at home</li>
-                  <li class="employee__item desc">Meals while traveling</li>
-                </ul>
-
-                <a href="#!" class="employee__btn btn">Get Started Now</a>
-              </div>
-            </div>
-            <div class="col-6 col-xl-7 col-md-12 offset-1 offset-xl-0">
-              <div class="employee__images">
-                <div class="employee__image">
-                  <div class="employee__image--bg"></div>
-                  <div class="employee__image--sub-bg">
-                    <img
-                      src="./assets/img/sub--banner-2.png"
-                      alt=""
-                      class="employee__banner-img"
-                    />
-                    <img
-                      src="./assets/img/Employee/employee-1.png"
-                      alt=""
-                      class="employee__avatar-bg"
-                    />
-                  </div>
-                  <img
-                    src="./assets/icons/play.svg"
-                    alt=""
-                    class="employee__play"
-                  />
-                  <div class="employee__banner"></div>
+                            <!-- Review 3 -->
+                            <div class="col">
+                                <article class="saying__review">
+                                    <img
+                                        src="./assets/icons/quotation.svg"
+                                        alt=""
+                                        class="saying__quotation"
+                                    />
+                                    <div class="saying__starts">
+                                        <img
+                                            src="./assets/img/starts.png"
+                                            alt=""
+                                            class="saying__starts-img"
+                                        />
+                                    </div>
+                                    <p class="saying__desc desc">
+                                        I’m obsessed with excellent customer
+                                        service...thanks foodeats for being
+                                        awesome!
+                                    </p>
+                                    <div class="separate"></div>
+                                    <h3 class="saying__name">Peter Moor</h3>
+                                    <p class="saying__job">UI/UX Designer</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Faster -->
-    <section class="faster">
-      <div class="container">
-        <div class="faster__inner">
-          <div class="faster__half-none">
-            <img src="./assets/icons/start-bg-1.svg" alt="" class="faster__sub-img-1 d-md-none">
-            <img src="./assets/icons/start-bg-2.svg" alt="" class="faster__sub-img-2 d-md-none">
-
-            <div class="faster__top">
-              <h2 class="faster__heading heading">
-                Find your flavour even faster
-              </h2>
-              <p class="faster__desc desc">
-                Download the Just Eat app for faster ordering and more
-                personalised recommendations.
-              </p>
-            </div>
-
-            <div class="faster__images">
-              <div class="row row-cols-3">
-                <div class="col-4">
-                  <img src="./assets/img/Phones/phone-1.png" alt="" class="faster__phone" />
-                </div>
-                <div class="col-4">
-                  <img src="./assets/img/Phones/phone-2.png" alt="" class="faster__phone" />
-                </div>
-                <div class="col-4">
-                  <img src="./assets/img/Phones/phone-3.png" alt="" class="faster__phone" />
-                </div>
-              </div>
-            </div>
-
-            <div class="faster__act">
-              <img src="./assets/img/Phones/chplay.png" alt="" class="faster__act-img">
-              <img src="./assets/img/Phones/appstore.png" alt="" class="faster__act-img">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer" id="footer"></footer>
-    <script>
-      load("#footer", "./templates/footer.html");
-    </script>
-  </body>
+        <!-- Footer -->
+        <footer class="footer" id="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    </body>
 </html>
