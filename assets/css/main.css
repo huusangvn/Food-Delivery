@@ -1336,7 +1336,9 @@ input {
 .logo {
   font-size: 2.4rem;
   font-weight: 800;
-  line-height: 18px; /* 141.667% */
+  line-height: 18px;
+  /* 141.667% */
+  white-space: nowrap;
 }
 
 @media (max-width: 991.98px) {
@@ -1555,6 +1557,131 @@ input {
 @media (max-width: 991.98px) {
   .act__btn {
     margin-left: 12px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer__row {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.footer__inner {
+  padding-top: 100px;
+}
+@media (max-width: 575.98px) {
+  .footer__inner {
+    padding-top: 50px;
+  }
+}
+.footer__desc {
+  margin-top: 12px;
+}
+@media (max-width: 575.98px) {
+  .footer__desc {
+    font-size: 1.6rem;
+    min-width: 270px;
+  }
+}
+.footer__contacts {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+@media (max-width: 575.98px) {
+  .footer__contacts {
+    gap: 8px;
+  }
+}
+.footer__contact {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  border-radius: 5px;
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+.footer__contact:hover {
+  background: var(--primary-color);
+}
+.footer__pages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 70px;
+  row-gap: 30px;
+}
+@media (max-width: 1199.98px) {
+  .footer__pages {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 991.98px) {
+  .footer__pages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767.98px) {
+  .footer__pages {
+    column-gap: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer__pages {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.footer__title {
+  margin-bottom: 24px;
+  font-family: Manrope;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+.footer__item {
+  font-family: Manrope;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 175%;
+  white-space: nowrap;
+}
+.footer__item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer__item + .footer__item {
+  margin-top: 16px;
+}
+.footer__separate {
+  margin-top: 55px;
+  background: #575363;
+}
+@media (max-width: 575.98px) {
+  .footer__separate {
+    margin-top: 30px;
+  }
+}
+.footer__coppy-right {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 575.98px) {
+  .footer__coppy-right {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+.footer__coppy-right--security {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 575.98px) {
+  .footer__coppy-right--security {
+    flex-direction: column;
+    gap: 12px;
   }
 }
 
@@ -2135,6 +2262,10 @@ input {
     margin-top: 30px;
   }
 }
+.employee__images {
+  display: flex;
+  justify-content: center;
+}
 @media (max-width: 767.98px) {
   .employee__images {
     width: 100%;
@@ -2482,6 +2613,110 @@ input {
     translate: -50%;
     bottom: -60px;
   }
+}
+
+.sub {
+  margin-top: 80px;
+  position: relative;
+}
+@media (max-width: 575.98px) {
+  .sub {
+    margin-top: 50px;
+  }
+}
+.sub__inner {
+  padding: 100px 0;
+  background: #29B067;
+}
+@media (max-width: 575.98px) {
+  .sub__inner {
+    padding: 50px 0;
+  }
+}
+.sub__top {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 18px;
+}
+@media (max-width: 575.98px) {
+  .sub__top {
+    gap: 12px;
+  }
+}
+.sub__heading, .sub__desc {
+  width: 470px;
+  color: #fff;
+}
+@media (max-width: 575.98px) {
+  .sub__heading, .sub__desc {
+    max-width: 339px;
+  }
+  .sub__heading {
+    font-size: 3.4rem;
+  }
+  .sub__desc {
+    font-size: 1.6rem;
+  }
+}
+.sub__form {
+  position: relative;
+  z-index: 1;
+  margin-top: 38px;
+}
+.sub__form-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 575.98px) {
+  .sub__form-group {
+    flex-direction: column;
+  }
+}
+.sub__form-input {
+  width: 393px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 166.667%;
+  flex-shrink: 0;
+}
+@media (max-width: 575.98px) {
+  .sub__form-input {
+    width: 100%;
+  }
+}
+.sub__btn {
+  background: #FFCF54;
+  color: inherit;
+}
+.sub__bg {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50%;
+}
+@media (max-width: 575.98px) {
+  .sub__bg {
+    width: 100%;
+  }
+}
+.sub__sub-bg--right {
+  position: absolute;
+  right: 0;
+}
+.sub__sub-bg--left {
+  position: absolute;
+  top: -132px;
+  left: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,18 +4,19 @@
     padding: 80px 0 160px;
     background: #fff;
 
-    @include abstracts.screen(md){
+    @include abstracts.screen(md) {
         padding: 70px 0 93px;
     }
 
     .row {
-        align-items: center;;
+        align-items: center;
+        ;
     }
 
     &__desc {
         margin: 18px 0;
 
-        @include abstracts.screen(sm){
+        @include abstracts.screen(sm) {
             margin: 12px 0 16px;
         }
     }
@@ -29,13 +30,16 @@
         margin-top: 38px;
         max-width: 212px;
 
-        @include abstracts.screen(sm){
+        @include abstracts.screen(sm) {
             margin-top: 30px;
         }
     }
 
     //Images
-    &__images{
+    &__images {
+        display: flex;
+        justify-content: center;
+
         @include abstracts.screen(md) {
             width: 100%;
             margin-top: 89px;
@@ -98,27 +102,27 @@
             width: 293.201px;
             height: 330px;
         }
-       
+
     }
 
-    &__banner{
+    &__banner {
         position: absolute;
         top: -25px;
         left: 72px;
     }
 
-    &__banner-img{
+    &__banner-img {
         position: absolute;
-       top: 14px;
-       left: 22px;
-       
-       @include abstracts.screen(sm) {
-        width: 213.076px;
-        height: 242.158px;
-    }
+        top: 14px;
+        left: 22px;
+
+        @include abstracts.screen(sm) {
+            width: 213.076px;
+            height: 242.158px;
+        }
     }
 
-    &__avatar-bg{
+    &__avatar-bg {
         display: block;
         position: relative;
         z-index: 99;
@@ -135,7 +139,7 @@
     }
 
 
-    &__play{
+    &__play {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -144,7 +148,7 @@
         @include abstracts.screen(sm) {
             width: 78px;
         }
-      
+
     }
 
 }

@@ -1,0 +1,119 @@
+@use "../abstracts";
+
+.sub {
+    margin-top: 80px;
+    position: relative;
+
+    @include abstracts.screen(sm) {
+        margin-top: 50px;
+    }
+
+    &__inner {
+        padding: 100px 0;
+        background: #29B067;
+
+        @include abstracts.screen(sm) {
+            padding: 50px 0;
+        }
+    }
+
+    &__top {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 18px;
+
+        @include abstracts.screen(sm) {
+            gap: 12px;
+        }
+    }
+
+    &__heading,
+    &__desc {
+        width: 470px;
+        color: #fff;
+    }
+
+    @include abstracts.screen(sm) {
+
+        &__heading,
+        &__desc {
+            max-width: 339px;
+        }
+
+        &__heading {
+            font-size: 3.4rem;
+        }
+
+        &__desc {
+            font-size: 1.6rem;
+        }
+    }
+
+
+    &__form {
+        position: relative;
+        z-index: 1;
+        margin-top: 38px;
+
+        &-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            @include abstracts.screen(sm) {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__form-input {
+        width: 393px;
+        padding: 15px;
+        background: #fff;
+        border-radius: 6px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 166.667%;
+        flex-shrink: 0;
+
+        @include abstracts.screen(sm) {
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        background: #FFCF54;
+        color: inherit;
+    }
+
+    &__bg {
+        max-width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        translate: -50%;
+
+        @include abstracts.screen(sm) {
+            width: 100%;
+        }
+    }
+
+    &__sub-bg--right {
+        position: absolute;
+        right: 0;
+    }
+
+    &__sub-bg--left {
+        position: absolute;
+        top: -132px;
+        left: 0;
+    }
+
+
+
+}

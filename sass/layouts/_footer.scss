@@ -1,0 +1,134 @@
+@use "../abstracts";
+
+.footer {
+
+    &__row {
+        @include abstracts.screen(sm) {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    &__inner {
+        padding-top: 100px;
+
+        @include abstracts.screen(sm) {
+            padding-top: 50px;
+        }
+    }
+
+    &__desc {
+        margin-top: 12px;
+
+        @include abstracts.screen(sm) {
+            font-size: 1.6rem;
+            min-width: 270px;
+        }
+    }
+
+    &__contacts {
+        margin-top: 20px;
+        display: flex;
+        gap: 12px;
+
+        @include abstracts.screen(sm) {
+            gap: 8px;
+        }
+    }
+
+    &__contact {
+        width: 36px;
+        height: 36px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        border-radius: 5px;
+        transition: 0.3s;
+        flex-shrink: 0;
+
+        &:hover {
+            background: var(--primary-color);
+        }
+    }
+
+
+    &__pages {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 70px;
+        row-gap: 30px;
+
+        @include abstracts.screen(xl) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include abstracts.screen(lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include abstracts.screen(md) {
+            column-gap: 30px;
+        }
+
+        @include abstracts.screen(sm) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-family: Manrope;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    &__item {
+        font-family: Manrope;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 175%;
+        white-space: nowrap;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &__item+&__item {
+        margin-top: 16px;
+    }
+
+    &__separate {
+        margin-top: 55px;
+        background: #575363;
+
+        @include abstracts.screen(sm) {
+            margin-top: 30px;
+        }
+    }
+
+    &__coppy-right {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        @include abstracts.screen(sm) {
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        &--security {
+            display: flex;
+            gap: 30px;
+
+            @include abstracts.screen(sm) {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    }
+}
